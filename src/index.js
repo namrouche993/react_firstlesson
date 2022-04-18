@@ -9,7 +9,7 @@ import Pro from './Pro';
 
 
 ReactDOM.render(
-   <App />,
+   <App address='spain'/>,
   document.getElementById('root')
 );
 
