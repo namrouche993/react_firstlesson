@@ -4,6 +4,8 @@ import App from './App';
 import AppClass from './AppClass';
 import Pro from './Pro';
 import Log from './Log';
+import AppButtonlog from './AppButtonlog';
+
 
 import { render } from 'react-dom';
 
@@ -37,4 +39,10 @@ ReactDOM.render(
 ReactDOM.render(
   <Log/>,
  document.getElementById('root_log')
+);
+
+
+ReactDOM.render(
+  <AppButtonlog/>,
+ document.getElementById('root_button_loginout')
 );
