@@ -15,7 +15,7 @@ import { render } from 'react-dom';
 
 
 ReactDOM.render(
-   <App />,
+   <App colorname="yellow"/>,
   document.getElementById('root')
 );
 
