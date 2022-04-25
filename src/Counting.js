@@ -15,6 +15,13 @@ class Counting extends React.Component {
      }, 1000)
    }
 
+  componentDidUpdate(prevProps,prevState) {
+    if(prevState.count!=this.state.count){
+      console.log(prevState.count+"compo did update"+this.state.count)
+    }
+   }
+
+
  Changecounting = () => {
    this.setState({count: this.state.count +1})
   }
