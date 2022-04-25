@@ -5,6 +5,7 @@ import AppClass from './AppClass';
 import Pro from './Pro';
 import Log from './Log';
 import AppButtonlog from './AppButtonlog';
+import Counting from './Counting';
 
 
 import { render } from 'react-dom';
@@ -14,10 +15,12 @@ import { render } from 'react-dom';
 
 
 
+
 ReactDOM.render(
    <App colorname="yellow"/>,
   document.getElementById('root')
 );
+
 
 ReactDOM.render(
   <Pro/>,
@@ -26,10 +29,9 @@ ReactDOM.render(
 
 let cond = Math.random()
 console.log(cond)
+
 ReactDOM.render(
   <AppClass name={cond>0.5 ? "hmida":"redouane"} color="green"/>,
- // <AppClass name="hmida"/>,
-
  document.getElementById('root_classcomponent')
 );
 
@@ -45,4 +47,10 @@ ReactDOM.render(
 ReactDOM.render(
   <AppButtonlog/>,
  document.getElementById('root_button_loginout')
+);
+
+
+ReactDOM.render(
+  <Counting/>,
+ document.getElementById('root_counting')
 );
