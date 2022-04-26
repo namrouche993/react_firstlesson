@@ -11,12 +11,12 @@ class Counting extends React.Component {
 
  componentDidMount() {
     setInterval(() => {
-        this.setState({count: this.state.count +1})
+        this.setState({count: this.state.count +2})
      }, 1000)
    }
 
   componentDidUpdate(prevProps,prevState) {
-    if(prevState.count!=this.state.count){
+    if(prevState.count==this.state.count){
       console.log(prevState.count+"compo did update"+this.state.count)
     }
    }

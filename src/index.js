@@ -6,9 +6,12 @@ import Pro from './Pro';
 import Log from './Log';
 import AppButtonlog from './AppButtonlog';
 import Counting from './Counting';
+import TryEffectBind from './TryEffectBind';
+import Damount from './Damount';
 
+import Lifecycle from './Lifecycle';
+import ComponentDidMountMethod from './ComponentDidMountMethod';
 
-import { render } from 'react-dom';
 
 //import ProductsComp from './ProductsComp';
 //import products from './products';
@@ -54,3 +57,28 @@ ReactDOM.render(
   <Counting/>,
  document.getElementById('root_counting')
 );
+
+ReactDOM.render(
+  <TryEffectBind/>,
+ document.getElementById('root_trybind')
+);
+
+ReactDOM.render(
+  <Damount/>,
+ document.getElementById('root_damount')
+);
+
+ReactDOM.render(
+  <Lifecycle/>,
+ document.getElementById('root_Lifecycle')
+);
+
+
+
+
+ReactDOM.render(
+  <ComponentDidMountMethod/>,
+ document.getElementById('root_ComponentDidMountMethod')
+);
+
+
